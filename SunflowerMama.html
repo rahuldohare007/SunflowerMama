@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="Style.css">
+    <link rel="stylesheet" href="style.css">
     <title>Sunflower🌻Mama</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -13,11 +13,12 @@
 </head>
 
 <body class="w-full h-screen">
+
     <!-- Navbar -->
     <nav class="flex justify-between items-center h-20 px-5 text-white">
         <!-- Logo -->
         <a href="SunflowerMama.html">
-            <img src="/assets/SunflowerMamaLogo.png" alt="SunflowerMamaLogo" height="200" width="150">
+            <img src="/assets/SunflowerMamaLogo.png" alt="SunflowerMamaLogo" height="300" width="250">
         </a>
 
         <!-- Main Menu -->
@@ -26,35 +27,64 @@
             <li><a href="#aboutUs" class="hover:text-yellow-400">About Us</a></li>
 
             <!-- Services Dropdown -->
-            <li class="group relative">
+            <li class="relative">
                 <a href="#services" class="inline-block hover:text-yellow-400">Services</a>
-                <ul class="absolute left-0 hidden group-hover:block bg-gray-700 mt-2 p-3 space-y-2 rounded-lg w-48">
-                    
-                    <!-- Endometriosis Dropdown -->
-                    <li class="group relative">
+                <button onclick="toggleDropdown('servicesDropdown')" class="ml-1 focus:outline-none">
+                    <span id="servicesIcon">▼</span>
+                </button>
+                <ul id="servicesDropdown"
+                    class="hidden absolute left-0 bg-gray-700 mt-2 p-3 space-y-2 rounded-lg w-48 z-10">
+
+                    <!-- Endometriosis -->
+                    <li class="relative">
                         <a href="#endometriosis" class="inline-block hover:text-yellow-400">Endometriosis</a>
-                        <ul class="absolute left-full top-0 hidden group-hover:block bg-gray-600 mt-2 p-3 space-y-2 rounded-lg w-48">
+                        <button onclick="toggleDropdown('endometriosisDropdown')" class="ml-1 focus:outline-none">
+                            <span id="endometriosisIcon">▼</span>
+                        </button>
+                        <ul id="endometriosisDropdown"
+                            class="hidden mt-2 p-3 space-y-2 bg-gray-600 rounded-lg w-48 z-20">
                             <li><a href="#doctors" class="block hover:text-yellow-400">Doctors</a></li>
                             <li><a href="#laboratory" class="block hover:text-yellow-400">Laboratory</a></li>
                         </ul>
                     </li>
 
                     <!-- Fertility Dropdown -->
-                    <li class="group relative">
+                    <li class="relative">
                         <a href="#fertility" class="inline-block hover:text-yellow-400">Fertility</a>
-                        <ul class="absolute left-full top-0 hidden group-hover:block bg-gray-600 mt-2 p-3 space-y-2 rounded-lg w-56">
-                            <li class="group relative">
-                                <a href="#gynaecologists" class="block hover:text-yellow-400">New Gynaecologists (Female)</a>
-                                <ul class="absolute left-full top-0 hidden group-hover:block bg-gray-500 mt-2 p-3 space-y-2 rounded-lg w-48">
+                        <button onclick="toggleDropdown('fertilityDropdown')" class="ml-1 focus:outline-none">
+                            <span id="fertilityIcon">▼</span>
+                        </button>
+                        <ul id="fertilityDropdown" class="hidden mt-2 p-3 space-y-2 bg-gray-600 rounded-lg w-56 z-20">
+
+                            <!-- Female Fertility -->
+                            <li class="relative">
+                                <a href="#gynaecologists" class="block hover:text-yellow-400">New Gynaecologists
+                                    (Female)</a>
+                                <button onclick="toggleDropdown('gynaecologistsDropdown')"
+                                    class="ml-1 focus:outline-none">
+                                    <span id="gynaecologistsIcon">▼</span>
+                                </button>
+                                <ul id="gynaecologistsDropdown"
+                                    class="hidden mt-2 p-3 space-y-2 bg-gray-500 rounded-lg w-48 z-30">
                                     <li><a href="#doctors" class="block hover:text-yellow-400">Doctors</a></li>
-                                    <li><a href="#laboratories" class="block hover:text-yellow-400">Laboratories</a></li>
+                                    <li><a href="#laboratories" class="block hover:text-yellow-400">Laboratories</a>
+                                    </li>
                                 </ul>
                             </li>
-                            <li class="group relative">
-                                <a href="#andrologists" class="block hover:text-yellow-400">Andrologists & Urologists (Male)</a>
-                                <ul class="absolute left-full top-0 hidden group-hover:block bg-gray-500 mt-2 p-3 space-y-2 rounded-lg w-48">
+
+                            <!-- Male Fertility -->
+                            <li class="relative">
+                                <a href="#andrologists" class="block hover:text-yellow-400">Andrologists & Urologists
+                                    (Male)</a>
+                                <button onclick="toggleDropdown('andrologistsDropdown')"
+                                    class="ml-1 focus:outline-none">
+                                    <span id="andrologistsIcon">▼</span>
+                                </button>
+                                <ul id="andrologistsDropdown"
+                                    class="hidden mt-2 p-3 space-y-2 bg-gray-500 rounded-lg w-48 z-30">
                                     <li><a href="#doctors" class="block hover:text-yellow-400">Doctors</a></li>
-                                    <li><a href="#laboratories" class="block hover:text-yellow-400">Laboratories</a></li>
+                                    <li><a href="#laboratories" class="block hover:text-yellow-400">Laboratories</a>
+                                    </li>
                                 </ul>
                             </li>
                         </ul>
@@ -78,6 +108,7 @@
         </a>
     </nav>
 
+    <!-- JavaScript for toggle functionality -->
     <script src="Index.js"></script>
 </body>
 

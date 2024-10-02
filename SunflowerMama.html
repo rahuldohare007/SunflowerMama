@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="Style.css">
+    <title>Sunflower🌻Mama</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&display=swap" rel="stylesheet">
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+
+<body class="w-full h-screen">
+    <!-- Navbar -->
+    <nav class="flex justify-between items-center h-20 px-5 text-white">
+        <!-- Logo -->
+        <a href="SunflowerMama.html">
+            <img src="/assets/SunflowerMamaLogo.png" alt="SunflowerMamaLogo" height="200" width="150">
+        </a>
+
+        <!-- Main Menu -->
+        <ul class="flex space-x-4">
+            <li><a href="SunflowerMama.html" class="hover:text-yellow-400">Home</a></li>
+            <li><a href="#aboutUs" class="hover:text-yellow-400">About Us</a></li>
+
+            <!-- Services Dropdown -->
+            <li class="group relative">
+                <a href="#services" class="inline-block hover:text-yellow-400">Services</a>
+                <ul class="absolute left-0 hidden group-hover:block bg-gray-700 mt-2 p-3 space-y-2 rounded-lg w-48">
+                    
+                    <!-- Endometriosis Dropdown -->
+                    <li class="group relative">
+                        <a href="#endometriosis" class="inline-block hover:text-yellow-400">Endometriosis</a>
+                        <ul class="absolute left-full top-0 hidden group-hover:block bg-gray-600 mt-2 p-3 space-y-2 rounded-lg w-48">
+                            <li><a href="#doctors" class="block hover:text-yellow-400">Doctors</a></li>
+                            <li><a href="#laboratory" class="block hover:text-yellow-400">Laboratory</a></li>
+                        </ul>
+                    </li>
+
+                    <!-- Fertility Dropdown -->
+                    <li class="group relative">
+                        <a href="#fertility" class="inline-block hover:text-yellow-400">Fertility</a>
+                        <ul class="absolute left-full top-0 hidden group-hover:block bg-gray-600 mt-2 p-3 space-y-2 rounded-lg w-56">
+                            <li class="group relative">
+                                <a href="#gynaecologists" class="block hover:text-yellow-400">New Gynaecologists (Female)</a>
+                                <ul class="absolute left-full top-0 hidden group-hover:block bg-gray-500 mt-2 p-3 space-y-2 rounded-lg w-48">
+                                    <li><a href="#doctors" class="block hover:text-yellow-400">Doctors</a></li>
+                                    <li><a href="#laboratories" class="block hover:text-yellow-400">Laboratories</a></li>
+                                </ul>
+                            </li>
+                            <li class="group relative">
+                                <a href="#andrologists" class="block hover:text-yellow-400">Andrologists & Urologists (Male)</a>
+                                <ul class="absolute left-full top-0 hidden group-hover:block bg-gray-500 mt-2 p-3 space-y-2 rounded-lg w-48">
+                                    <li><a href="#doctors" class="block hover:text-yellow-400">Doctors</a></li>
+                                    <li><a href="#laboratories" class="block hover:text-yellow-400">Laboratories</a></li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </li>
+
+                    <!-- Pharmacies -->
+                    <li><a href="#pharmacies" class="block hover:text-yellow-400">Pharmacies</a></li>
+                </ul>
+            </li>
+
+            <li><a href="#blog" class="hover:text-yellow-400">Blog</a></li>
+            <li><a href="#knowledgeCenter" class="hover:text-yellow-400">Knowledge Center</a></li>
+            <li><a href="#products" class="hover:text-yellow-400">Products</a></li>
+            <li><a href="#faqs" class="hover:text-yellow-400">FAQs</a></li>
+            <li><a href="#contactUs" class="hover:text-yellow-400">Contact Us</a></li>
+        </ul>
+
+        <!-- User Icon -->
+        <a href="SunflowerMama.html">
+            <img src="/assets/user.png" alt="UserLogo" width="40" height="15" id="userLogo">
+        </a>
+    </nav>
+
+    <script src="Index.js"></script>
+</body>
+
+</html>
